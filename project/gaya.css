@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+  text-decoration: none;
+  color: white;
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background-color: black;
+  font-family: "poppins", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  min-height: 10vh;
+  align-items: center;
+  margin: auto;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.cursor {
+  width: 2rem;
+  height: 2rem;
+  border: 2.5px solid red;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  z-index: 99999;
+  backdrop-filter: graysclae();
+}
+.link-grow {
+  transform: scale(2);
+  background: transparent;
+  border: 2px solid white;
+}
+.nav-links li {
+  padding: 0.7rem;
+}
+.hovered-link {
+  color: red;
+}
+.header {
+  text-align: center;
+}
+.text {
+  margin: 50px;
+  font-size: 50px;
+  letter-spacing: 7px;
+}
+.content {
+  position: relative;
+  z-index: 1;
+  margin: 50px;
+  width: 1600px;
+  height: 100px;
+  background-color: white;
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  transition: background-color 0.5s ease-in-out;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.text1 {
+  color: black;
+  margin-left: 30px;
+}
+.content:hover {
+  background-color: red;
+}
+img {
+  width: 150px;
+  background-color: transparent;
+}
+.quran {
+  width: 300px;
+  margin-right: -90px;
+}
+.rumah {
+  width: 100px;
+  margin-right: 5px;
+}
+.bottom {
+  height: 100px;
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+.txt {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.bottom img {
+  width: 50px;
+  margin: 30px;
+  transition: transform 0.5s ease-in-out;
+}
+.bottom img:hover {
+  transform: translateY(-15px);
+}

@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+  text-decoration: none;
+  color: white;
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: "poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  min-height: 10vh;
+  align-items: center;
+  margin: auto;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.cursor {
+  width: 2rem;
+  height: 2rem;
+  border: 2.5px solid red;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  z-index: 99999;
+  backdrop-filter: graysclae();
+}
+.link-grow {
+  transform: scale(2);
+  background: transparent;
+  border: 2px solid white;
+}
+.nav-links li {
+  padding: 0.7rem;
+}
+.hovered-link {
+  color: red;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+.feed {
+  margin-top: 50px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feed img {
+  width: 300px;
+  margin-left: 50px;
+}
+video {
+  margin-left: 50px;
+  width: 300px;
+}
+.feed p {
+  margin-left: 10px;
+}
+.penjelasan {
+  margin: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+.penjelasan1 {
+  margin-top: 25px;
+  font-size: 40px;
+}
+.penjelasan2 {
+  color: gray;
+  font-size: 40px;
+  margin-left: -30px;
+  margin-top: 25px;
+  transition: color 0.5s ease-in-out;
+}
+.desc1 {
+  font-size: 20px;
+  margin-top: 200px;
+}
+.desc {
+  transition: color 0.5s ease-in-out;
+  color: gray;
+  font-size: 20px;
+  margin-top: 200px;
+}
+.penjelasan2:hover {
+  color: white;
+}
+.desc:hover {
+  color: white;
+}
+.download {
+  text-align: center;
+  margin-top: 100px;
+  color: black;
+}
+.button {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: white;
+  transition: background-color 0.5s ease-in-out;
+}
+.link {
+  color: black;
+}
+.button:hover {
+  background-color: red;
+}
